@@ -1,0 +1,84 @@
+{% comment %} <header>
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'gameconsole' %}">About</a>
+</header> {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {% comment %} <link rel='stylesheet' type='text/css' media='screen' href="../css/style.css"> {% endcomment %}
+    {% comment %} <script src='main.js'></script> {% endcomment %}
+</head>
+<body>
+
+
+
+<style>  table{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}  
+/* div{
+    margin-left: 20%;
+    margin-right: 20%;
+} */
+
+.one{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.two{
+    margin-left: 20%;
+    margin-right: 20%;     
+}
+
+.tb{
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute; 
+    bottom: 0; 
+}
+.image{
+    margin:10px 10px 0px 10px;
+} </style>
+
+
+
+
+
+    <div class = "one">
+        <table>
+            <tr>
+                <th><a href="{% url 'home' %}">Home</a></th>
+                <th><a href="{% url 'gameconsole' %}">GameConsole</a></th>
+                <th>Login</th>
+            </tr>
+        </table>
+
+
+
+{% block content %}
+
+
+
+{% endblock content %}
+
+
+
+
+<div class = "two">
+        <table  class = "tb">
+            <tr>
+                <th>Контакты</th>
+                <th>Телефон</th>
+                <th>Почта</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
